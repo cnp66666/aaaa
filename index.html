@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.divx{
+				width: 500px;
+				height: 300px;
+				border: 1px solid red;
+				margin: 0 auto;
+				margin-top: 50px;
+			}
+			.div1{
+				width: 100px;
+				margin: 0 auto;
+				margin-top: 50px;
+			}
+			.div2{
+				width: 300px;
+				margin: 0 auto;
+				margin-top: 150px;
+				display: flex;
+				justify-content: space-between;
+			}
+			input{
+				width: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="divx">
+			<div class="div1">
+				你是猪吗？
+			</div>
+			<div class="div2">
+				<input type="button" id="btn1" value="是" />
+				<input type="button" id="btn2" value="不是" />
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var btn1=document.getElementById("btn1");
+		var btn2=document.getElementById("btn2");
+		btn1.onmouseover = function (){
+        	btn1.value="是";
+        	btn2.value="不是";
+	   }
+		btn2.onmouseover = function (){
+			btn2.value="是";
+        	btn1.value="不是";
+	   }
+	    btn1.onclick=function(){
+	    	alert("你是猪！")
+	    }
+	    btn2.onclick=function(){
+	    	alert("你是猪！")
+	    }
+	</script>
+</html>
